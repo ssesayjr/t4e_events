@@ -1,0 +1,363 @@
+@import url(./fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:300,400");
+
+
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 100%;
+}
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background: rgb(255, 255, 255);
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-attachment: center;
+    background-position: center;
+    cursor: default;
+    position: center;
+    text-align: center;
+}
+
+
+.container .videos{
+    width: 20%;
+    padding: 5px 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+
+.container .videos video{
+    width: 95%;
+    height: 70%;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow-y: scroll;
+}
+
+.container .videos video:nth-child(1){
+    margin-top: 0;
+}
+
+.container .videos video:hover,
+.container .videos .active{
+    transform: scale(1.06);
+    border: 3px solid #5b82ee;
+}
+
+.container .main-video{
+    width: 90%;
+    padding: 0px;
+}
+
+.container .main-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #5b82ee;
+}
+
+
+@media screen and (max-width: 980px) {
+
+    #container {
+        background-attachment: scroll;
+        height: 80vh;
+        min-height: 35rem;
+    }
+
+        #container > .inner {
+            margin: 0 auto;
+            max-width: 35rem;
+        }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #container {
+        height: auto;
+        min-height: 38rem;
+    }
+
+        #container > .inner {
+            padding: 0 1.5rem;
+        }
+
+            #container > .inner h1 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            #container > .inner br {
+                display: none;
+            }
+
+            #container > .inner p {
+                font-size: 1rem;
+            }
+
+            #container > .inner .icon {
+                margin-bottom: 2rem;
+            }
+
+}
+
+/* Typography */
+
+html {
+    font-size: 13pt;
+}
+
+    @media screen and (max-width: 1680px) {
+
+        html {
+            font-size: 11pt;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        html {
+            font-size: 12pt;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        html {
+            font-size: 11pt;
+        }
+
+    }
+
+body {
+    background-color: #ffffff;
+    color: #282828;
+}
+
+body, input, select, textarea {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+strong, b {
+    font-weight: 400;
+}
+
+em, i {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 736px) {
+
+    h1 {
+        font-size: 2.75rem;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+}
+
+sub {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+sup {
+    font-size: 0.8rem;
+    position: relative;
+    top: -0.5rem;
+}
+
+blockquote {
+    border-left: solid 0.5rem;
+    font-style: italic;
+    margin: 0 0 2rem 0;
+    padding: 1rem 0 1rem 2rem;
+}
+
+code {
+    border-radius: 4px;
+    border: solid 1px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    margin: 0 0.25rem;
+    padding: 0.25rem 0.65rem;
+}
+
+pre {
+    -webkit-overflow-scrolling: touch;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+}
+
+    pre code {
+        display: block;
+        line-height: 1.75;
+        padding: 1rem 1.5rem;
+        overflow-x: auto;
+    }
+
+hr {
+    border: 0;
+    border-bottom: solid 1px;
+    margin: 2rem 0;
+}
+
+    hr.major {
+        margin: 4rem 0;
+    }
+
+    @media screen and (max-width: 736px) {
+
+        hr.major {
+            margin: 3rem 0;
+        }
+
+    }
+
+input, select, textarea {
+    color: #282828;
+}
+
+strong, b {
+    color: #282828;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #282828;
+}
+
+blockquote {
+    border-left-color: rgba(0, 0, 0, 0.15);
+}
+
+code {
+    background: rgba(0, 0, 0, 0.075);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+hr {
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* Loading Content in Page*/
+.resource {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: left;
+    cursor: default;
+    position: relative;
+}   
+
+.resource .original {
+    display: block;
+
+}
+
+.resource .resHidden {
+    display: none;
+}

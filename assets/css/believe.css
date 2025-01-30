@@ -1,0 +1,109 @@
+.gallery {
+    --s: 200px; /* control the size */
+    --g: 10px;  /* control the gap */
+
+    margin-right: 35px;
+    min-height: 50vh;
+    max-width: 60vh;
+    max-height: 52vh;
+    min-height: auto;
+    display: grid;
+    place-content: center;
+    background:  #4468ca;
+    display: grid;
+    gap: var(--g);
+    grid-template-columns: repeat(2,auto);
+    position: relative;
+    float: left;
+    padding: 5px;
+    
+  }
+  .gallery > img {
+    width: var(--s);
+    aspect-ratio: 1;
+    object-fit: cover;
+    -webkit-mask: conic-gradient(from var(--_a),#0000 90deg,#000 0);
+            mask: conic-gradient(from var(--_a),#0000 90deg,#000 0);
+  }
+  .gallery > img:nth-child(1) {--_a: 90deg}
+  .gallery > img:nth-child(2) {--_a:180deg}
+  .gallery > img:nth-child(3) {--_a:  0deg}
+  .gallery > img:nth-child(4) {--_a:-90deg}
+  .gallery > img:nth-child(5) {
+    position: absolute;
+    inset: calc(50% - .5*var(--s));
+    clip-path: inset(calc(var(--g)/4));
+  }
+  
+  .explanation{
+    padding-left: 100px;
+    margin-left: 40px;
+  }
+
+
+  @media screen and (max-width: 980px) {
+
+    #gallery {
+        background-attachment: scroll;
+        height: 80vh;
+        min-height: 35rem;
+    }
+
+        #gallery > .img {
+            margin: 0 auto;
+            max-width: 35rem;
+        }
+
+            #gallery > .img h1 {
+                font-size: 3rem;
+            }
+
+            #gallery > .img p {
+                font-size: 1.25rem;
+            }
+
+            #gallery > .img .icon {
+                border-radius: 100%;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                content: url("../../images/butterfly.png");
+                font-size: 3rem;
+                height: 8rem;
+                line-height: 6rem;
+                margin: 0 auto 3rem auto;
+                position: relative;
+                width: 8rem;
+                z-index: 10001;
+            }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #gallery {
+        height: auto;
+        min-height: 38rem;
+    }
+
+        #gallery > .img {
+            padding: 0 1.5rem;
+        }
+
+            #gallery > .img h1 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            #gallery > .img br {
+                display: none;
+            }
+
+            #gallery > .img p {
+                font-size: 1rem;
+            }
+
+            #gallery > .img .icon {
+                margin-bottom: 2rem;
+            }
+
+}
