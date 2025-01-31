@@ -1,9 +1,26 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:300,400");
 
+@font-face {
+    font-family: "Audrey";
+	font-weight: normal;
+    src: url("../audrey/Audrey-Normal.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Mosk";
+	font-weight: normal;
+    src: url("../mosk/Mosk-Normal-400.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Mosk";
+	font-weight: bold;
+    src: url("../mosk/Mosk-Semi-Bold-600.ttf") format("ttf");
+}
 /*
 	Venue by Pixelarity
-	pixelarity.com | hello@pixelarity.com
+	pixelarity.com | hello@pixelarity.com 
 	License: pixelarity.com/license
 */
 
@@ -325,6 +342,7 @@ input, select, textarea {
 /* Header */
 
 	header.heading {
+		font-family: "Audrey";
 		border-bottom: 0px;
 		margin: 0 auto 2rem auto;
 		max-width: 80%;
@@ -3810,10 +3828,8 @@ input, select, textarea {
 /* Banner */
 
 #banner {
+	font: "Audrey";
 	color: rgba(255, 255, 255, 0.5);
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
 	display: flex;
 	-moz-align-items: center;
 	-webkit-align-items: center;
@@ -3835,9 +3851,6 @@ input, select, textarea {
 }
 #bannerMini {
 	color: rgba(255, 255, 255, 1);
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
 	display: flex;
 	-moz-align-items: center;
 	-webkit-align-items: center;
@@ -3858,10 +3871,6 @@ input, select, textarea {
 
 }
 #bannerMini > .svgMini{
-
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
 	display: flex;
 	-moz-align-items: center;
 	-webkit-align-items: center;
@@ -4132,6 +4141,7 @@ input, select, textarea {
 			}
 
 			#banner > .inner h1 {
+				font-family: "Mosk";
 				font-size: 4.9rem;
 				z-index: 1;
 				color: #ffffff;
@@ -4139,7 +4149,16 @@ input, select, textarea {
 			}
 
 			#bannerMini > .inner h1 {
+				font-family: "Mosk";
+				font-weight: bold;
 				font-size: 4.9rem;
+				z-index: 100;
+				color: #ffffff;
+				opacity: 1;
+			}
+			
+			#bannerMini > .inner h2 {
+				font-size: 1.5rem;
 				z-index: 100;
 				color: #ffffff;
 				opacity: 1;
