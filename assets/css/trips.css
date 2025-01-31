@@ -324,6 +324,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #282828;
+		text-align: center;
 	}
 
 	blockquote {
@@ -346,8 +347,8 @@ input, select, textarea {
 		border-bottom: 0px;
 		margin: 0 auto 2rem auto;
 		max-width: 80%;
-		text-align: left;
-		width: 45.71429rem;
+		text-align: center;
+		min-width: 45.71429rem;
 	}
 
 	header.major {
@@ -363,6 +364,8 @@ input, select, textarea {
 
 	header h2 {
 		margin-bottom: 0.50rem;
+		font-size: 2.5rem;
+		width: 100%;
 	}
 
 	header h3 {
@@ -1893,7 +1896,89 @@ input, select, textarea {
 	}
 
 /* Button */
+	.card {
+		border: none;
+	}
 
+	.card-header {
+		justify-content: center;
+		text-align: center;
+		margin-top: auto;
+		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		z-index: 100;
+		padding-bottom: 2em;
+
+	}
+
+	.btn_hover {
+		margin-left: auto;
+		margin-right: auto;
+		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		z-index: 100;
+		width: 100%;
+	}
+	.fadeInLeft {
+		opacity: 0;
+		transform: translateY(-50px);
+		padding-left: 2em;
+		transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+	  }
+	  .fadeInLeft.visible {
+		opacity: 100;
+		transform: translateY(0);
+	  }
+
+	  .fadeInRight.visible {
+		opacity: 100;		transform: translateY(0);
+
+	  }
+
+	.fadeInRight {
+		opacity: 0;
+		transform: translateY(50px);
+		padding-left: 2em;
+		padding-right: 2em;
+		transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	  }
+
+	.ohidden {
+		overflow: hidden;
+	}
+
+.container {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		font-size: inherit;
+		font-family:'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;		
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		margin: 0;
+	}
+	
+.image-container{ 
+	overflow: hidden;
+	position: relative; 
+	display: inline-block;
+  }
+
+  .image-container h2 {
+	margin-top: 0%;
+  }
+
+  .image-container img{ 
+	width: calc(100% + 60px) !important;
+  }
+  
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2004,9 +2089,10 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px #282828;
 		color: #282828 !important;
 	}
+
+
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2465,6 +2551,7 @@ input, select, textarea {
 /* List */
 
 	ol {
+		font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;";
 		list-style: decimal;
 		margin: 0 0 2rem 0;
 		padding-left: 1.25rem;
@@ -2477,7 +2564,7 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		margin: 0 0 2rem 0;
-		padding-left: 1rem;
+		padding-left: 5rem;
 	}
 
 		ul li {
@@ -3382,7 +3469,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
-				padding: 5rem 0 3rem 0 ;
+				padding: 3rem 0 3rem 0 ;
 			}
 
 		}
@@ -3430,7 +3517,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.inner {
-				max-width: calc(100% - 4rem);
+				max-width: calc(100% - 6rem);
 				width: 100%;
 			}
 
@@ -3486,6 +3573,7 @@ input, select, textarea {
 
 		#header > .logo {
 			color: #ffffff;
+			text-shadow: 2px 2px 8px #000000;
 			display: inline-block;
 			font-family: "Fjalla One", sans-serif;
 			font-weight: 400;
@@ -3839,7 +3927,6 @@ input, select, textarea {
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	background-attachment: fixed;
 	background-size: cover;
 	cursor: default;
 	min-height: 60rem;
@@ -3852,6 +3939,8 @@ input, select, textarea {
 #bannerMini {
 	color: rgba(255, 255, 255, 1);
 	display: flex;
+	background-image: url('C:/Users/ssesa/Documents/GitHub/t4e_events/images/cloths.png');
+	background-size:cover;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3861,266 +3950,16 @@ input, select, textarea {
 	-ms-justify-content: center;
 	justify-content: center;
 	background-attachment: fixed;
-	background-size: cover;
-	cursor: default;
-	min-height: 30rem;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.6);
+	background-blend-mode: overlay;	min-height: 60vh;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	text-align: left bottom;
+	text-align: center;
+	z-index: 100;
 
 }
-#bannerMini > .svgMini{
-	display: flex;
-	-moz-align-items: center;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	-moz-justify-content: center;
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
-	position: fixed;
-	width: 100%;
-	height: auto;
-	top: 0;
-	z-index: -4;
-	}
-
-
-
-#banner > .svg{
-
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-moz-align-items: center;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	-moz-justify-content: center;
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
-	position: fixed;
-	width: 100%;
-	height: auto;
-	top: 0;
-	z-index: -4;
-	}
-
-		#banner input, #banner select, #banner textarea {
-			color: #ffffff;
-		}
-
-		#banner strong, #banner b {
-			color: #ffffff;
-		}
-
-		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-			color: #ffffff;
-		}
-
-		#banner blockquote {
-			border-left-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#banner code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#banner hr {
-			border-bottom-color: rgba(255, 255, 255, 1);
-		}
-
-		#banner .box {
-			border-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#banner input[type="submit"],
-		#banner input[type="reset"],
-		#banner input[type="button"],
-		#banner button,
-		#banner .button {
-			background-color: transparent;
-			box-shadow: inset 0 0 0 1px #ffffff;
-			color: #ffffff !important;
-		}
-
-			#banner input[type="submit"]:hover,
-			#banner input[type="reset"]:hover,
-			#banner input[type="button"]:hover,
-			#banner button:hover,
-			#banner .button:hover {
-				background-color: rgba(255, 255, 255, 0.075);
-				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-			}
-
-				#banner input[type="submit"]:hover:active,
-				#banner input[type="reset"]:hover:active,
-				#banner input[type="button"]:hover:active,
-				#banner button:hover:active,
-				#banner .button:hover:active {
-					background-color: rgba(255, 255, 255, 0.05);
-					box-shadow: inset 0 0 0 1px #ffffff;
-				}
-
-			#banner input[type="submit"].primary,
-			#banner input[type="reset"].primary,
-			#banner input[type="button"].primary,
-			#banner button.primary,
-			#banner .button.primary {
-				background-color: #4468ca;
-				box-shadow: none;
-				color: #ffffff !important;
-			}
-
-				#banner input[type="submit"].primary:hover,
-				#banner input[type="reset"].primary:hover,
-				#banner input[type="button"].primary:hover,
-				#banner button.primary:hover,
-				#banner .button.primary:hover {
-					background-color: #5878d0;
-					box-shadow: none;
-				}
-
-					#banner input[type="submit"].primary:hover:active,
-					#banner input[type="reset"].primary:hover:active,
-					#banner input[type="button"].primary:hover:active,
-					#banner button.primary:hover:active,
-					#banner .button.primary:hover:active {
-						background-color: #365bbf;
-					}
-
-		#banner label {
-			color: #ffffff;
-		}
-
-		#banner input[type="text"],
-		#banner input[type="password"],
-		#banner input[type="email"],
-		#banner input[type="tel"],
-		#banner input[type="search"],
-		#banner input[type="url"],
-		#banner select,
-		#banner textarea {
-			background-color: transparent;
-			border-color: rgba(255, 255, 255, 0.15);
-		}
-
-			#banner input[type="text"]:focus,
-			#banner input[type="password"]:focus,
-			#banner input[type="email"]:focus,
-			#banner input[type="tel"]:focus,
-			#banner input[type="search"]:focus,
-			#banner input[type="url"]:focus,
-			#banner select:focus,
-			#banner textarea:focus {
-				border-color: #4468ca;
-				box-shadow: 0 0 0 1px #4468ca;
-			}
-
-		
-
-			#banner select option {
-				color: rgba(255, 255, 255, 0.5);
-				background-color: #353535;
-			}
-
-		#banner input[type="checkbox"] + label,
-		#banner input[type="radio"] + label {
-			color: rgba(255, 255, 255, 0.5);
-		}
-
-			#banner input[type="checkbox"] + label:before,
-			#banner input[type="radio"] + label:before {
-				background-color: transparent;
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
-		#banner input[type="checkbox"]:checked + label:before,
-		#banner input[type="radio"]:checked + label:before {
-			background-color: #4468ca;
-			border-color: #4468ca;
-			color: #ffffff;
-		}
-
-		#banner input[type="checkbox"]:focus + label:before,
-		#banner input[type="radio"]:focus + label:before {
-			border-color: #4468ca;
-			box-shadow: 0 0 0 1px #4468ca;
-		}
-
-		#banner ::-webkit-input-placeholder {
-			color: rgba(255, 255, 255, 0.25) !important;
-		}
-
-		#banner :-moz-placeholder {
-			color: rgba(255, 255, 255, 0.25) !important;
-		}
-
-		#banner ::-moz-placeholder {
-			color: rgba(255, 255, 255, 0.25) !important;
-		}
-
-		#banner :-ms-input-placeholder {
-			color: rgba(255, 255, 255, 0.25) !important;
-		}
-
-		#banner header.heading {
-			border-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#bannerMini header.heading {
-			border-color: rgba(255, 255, 255, 1);
-		}
-
-
-		#banner header p {
-			color: #4468ca;
-		}
-
-		#banner ul.alt li {
-			border-top-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#banner table tbody tr {
-			border-color: rgba(255, 255, 255, 0.15);
-		}
-
-			#banner table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.075);
-			}
-
-		#banner table th {
-			color: #ffffff;
-		}
-
-		#banner table thead {
-			border-bottom-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#banner table tfoot {
-			border-top-color: rgba(255, 255, 255, 0.15);
-		}
-
-		#banner table.alt tbody tr td {
-			border-color: rgba(255, 255, 255, 0.15);
-		}
-
-
-		
-		#banner > .inner {
-			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			position: relative;
-			width: 100%;
-			z-index: 1;
-		}
 
 		#bannerMini > .inner {
 			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
@@ -4131,36 +3970,21 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-			#banner > .inner > :last-child {
-				margin-bottom: 0;
-			}
-
-			#banner > .inner h1, #banner > .inner p, #banner > .inner ul {
-				position: relative;
-				z-index: 1;
-			}
-
-			#banner > .inner h1 {
-				font-family: "Mosk";
-				font-size: 4.9rem;
-				z-index: 1;
-				color: #ffffff;
-				opacity: 1;
-			}
-
 			#bannerMini > .inner h1 {
 				font-family: "Mosk";
 				font-weight: bold;
-				font-size: 4.9rem;
+				text-shadow: 2px 2px 6px #000000;
+				font-size: 5.5rem;
 				z-index: 100;
 				color: #ffffff;
 				opacity: 1;
 			}
 			
 			#bannerMini > .inner h2 {
+				text-shadow: 2px 2px 4px #000000;
 				font-size: 1.5rem;
 				z-index: 100;
-				color: #ffffff;
+				color: #4e4e4e;
 				opacity: 1;
 			}
 

@@ -100,7 +100,7 @@
 		});
 
 	//slick 
-	$(document).ready(function(){
+/* 	$(document).ready(function(){
 		$('.customer-logos').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
@@ -121,7 +121,7 @@
 				}
 			}]
 		});
-	});
+	}); */
 
 	// Banner.
 		if ($banner.length > 0)
