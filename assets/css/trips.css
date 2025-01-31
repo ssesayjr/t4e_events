@@ -313,9 +313,53 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			hr.major {
-				margin: 3rem 0;
+				margin: auto;
 			}
 
+
+			.heading .major {
+				text-align: center;
+				justify-content: center;
+				overflow: visible;
+			}
+
+			.heading .major h2{
+				text-align: center;
+			}
+			.heading h2{
+				text-align: center;
+				width:75%;
+				max-width: calc(100% - 5rem);
+
+			}
+
+			#header .heading{
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				width: calc(100% - 5rem);
+				max-width: calc(100% - 5rem);
+
+			}
+
+
+			.inner .six .heading .major {
+				text-align: center;
+				justify-content: center;
+			}
+
+			.inner .six .heading .major h2{
+				text-align: center;
+			}
+			.inner .six .heading h2{
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				transform: translateX(0);
+				padding-right: 2%;
+				padding-left: 2%;
+				max-width: calc(100% - 1rem);
+			}
 		}
 
 	input, select, textarea {
@@ -395,7 +439,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			max-width: 80%;
+			max-width: calc(100% - 2rem);
 		}
 
 	}
@@ -1948,8 +1992,14 @@ input, select, textarea {
 		justify-content: center;
 	  }
 
+	  .fadeInLeft.visible:hover::after img {
+		-webkit-animation: shine .75s;
+		animation: shine .75s;
+	}
+
 	  .fadeInRight.visible {
-		opacity: 100;		transform: translateY(0);
+		opacity: 100;		
+		transform: translateY(0);
 
 	  }
 
@@ -1964,6 +2014,30 @@ input, select, textarea {
 	.ohidden {
 		overflow: hidden;
 	}
+
+/* Mobile friendly adjustments */
+@media (max-width: 768px) {
+  .fadeInLeft,
+  .fadeInRight {
+    max-width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  /* Optionally adjust the translation values for smoother mobile animations */
+  .fadeInLeft {
+    transform: translateY(-30px);
+  }
+  .fadeInRight {
+    transform: translateY(30px);
+  }
+  
+  /* Adjust visible state if needed */
+  .fadeInLeft.visible,
+  .fadeInRight.visible {
+    transform: translateY(0);
+  }
+}
 
 .container {
 		display: block;
@@ -2133,6 +2207,14 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 1px #364baa;
 	}
 
+	@media (max-width: 768px) {
+		.buttonApply {
+		  font-size: 1.2rem; /* Slightly smaller font size for mobile devices */
+		  padding: 0.5rem 1rem; /* Adjust padding for a more compact button */
+		  max-width: calc(100% - 1rem);
+		}
+	  }
+	  
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
@@ -2600,6 +2682,8 @@ input, select, textarea {
 			padding-left: 0.25rem;
 		}
 
+
+
 	ul {
 		list-style: disc;
 		margin: 0 0 2rem 0;
@@ -2817,6 +2901,10 @@ input, select, textarea {
 					}
 
 		@media screen and (max-width: 736px) {
+
+			ol {
+				padding-left: 2.5rem;
+			}
 
 			ul.icons li .icon {
 				font-size: 1.25rem;
@@ -3337,7 +3425,29 @@ input, select, textarea {
 
 	}
 
+/* Mobile friendly adjustments */
+@media (max-width: 768px) {
+	#four {
+		justify-content: center;
+		align-content: center;
+		overflow: hidden;
+		margin: auto;
+	}
+	.image-container img {
+		width: calc(100%) !important;
+	}
 
+	.four {
+	  /* Use a smaller subtraction to better fit smaller screens */
+	  max-width: calc(100% - 2rem);
+	}
+	
+	.six {
+	  /* Reduce padding for a more compact layout on mobile */
+	  padding-bottom: 5%;
+	}
+  }
+  
 	.inner > .content {
 		margin: 0 auto;
 		max-width: calc(100% - 10rem);
@@ -3382,8 +3492,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.inner {
-				width: 100%;
-				max-width: calc(100% - 1rem);
+				width: calc(100% - 5rem);
+				overflow: hidden;
 			}
 
 		}
@@ -3827,7 +3937,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
 			padding-top: 0%;
-
+			justify-content: center;
+			text-align: center;
 			width: 100%;
 			z-index: 1;
 		}
@@ -4032,43 +4143,36 @@ input, select, textarea {
 				height: auto;
 				min-height: 38rem;
 			}
+	
 
-			#banner > .svg {
-				width: 736px;
-				height: auto;
-				top: 0;
-				left:0;
+			#bannerMini > .inner {
+				margin-left: 0;
+				overflow: visible;
+				text-align: center;
 			}
 
-			#banner > .svgMini {
-				width: 736px;
-				height: auto;
-				top: 0;
-				left:0;
-			}			
+			header .heading{
+				justify-content: center;
+			}
+
+			#bannerMini > .inner h1{
+	
+				max-width: calc(100% - 2rem);
+				margin-left:0;
+				overflow: hidden;
+
+			}
+			
+			#bannerMini > .inner h2{
+	
+				max-width: calc(100% - 2rem);
+				margin-left:0;
+				overflow: hidden;
+				width:100%;
+
+			}
 
 
-				#banner > .inner {
-					padding: 0 1.5rem;
-				}
-
-					#banner > .inner h1 {
-						font-size: 2rem;
-						line-height: 3rem;
-					}
-
-					#banner > .inner br {
-						display: none;
-					}
-
-					#banner > .inner p {
-						font-size: 1.55rem;
-					}
-
-				
-					#banner > .inner .icon {
-						margin-bottom: 2rem;
-					}
 
 		}
 

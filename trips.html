@@ -52,7 +52,7 @@
 		</section>
 		
 		<!-- One -->
-		<section class="wrapper one" style="z-index: 100;">
+		<section class="one" style="z-index: 100;">
 			<div class="wrapper"  style="padding-bottom: 0%">
 				<div class="inner">
 					<p>Embark on an extraordinary odyssey that will reshape your perspective on racial justice, equity, and belonging. This immersive pro-Black program offers a unique opportunity to explore Ghana and the connection between our countries, combining powerful experiences with profound self-reflection. </p>
@@ -185,7 +185,7 @@
 				<p>Join an informational Zoom meeting on <b>April 22 at 6 pm Eastern</b>. <a href="#">Apply now</a> and be part of an unparalleled experience and cohort that's shaping a more inclusive and just future for all. Email your questions to Deitra Reiser <a href="mailto:dreiser@transformforequity.com">dreiser@transformforequity.com</a>.  </p>
 
 				<div class="buttonApplySub">
-					<button class="buttonApply"> Apply Now</button>
+					<button class="buttonApply">Apply Now</button>
 				</div>
 			</div>
 
@@ -236,19 +236,7 @@
 			$(document).ready(function(){
 				// Initialize WOW.js
 				new WOW().init();	
-
-				// When an accordion item is opened, trigger WOW animation again
-				$("#accordion .collapse").on('shown.bs.collapse', function () {
-				var wow = new WOW({
-					boxClass: 'wow', // Default WOW.js class
-					animateClass: 'animated', // Default animate.css class
-					offset: 0, // Adjust if needed
-					mobile: true, // Enable on mobile
-					live: true // Keep checking for new elements
-				});
-				});
-
-				
+		
 
 				$("#accordion .collapse").on('shown.bs.collapse', function () {
 					$('html, body').animate({
