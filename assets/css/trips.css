@@ -163,7 +163,6 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
 		color: #282828;
 	}
 
@@ -172,6 +171,11 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
+	}
+
+	p{
+		font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+		font-size: 1.25em;
 	}
 
 	a {
@@ -1924,6 +1928,7 @@ input, select, textarea {
 		width: 100%;
 	}
 	.fadeInLeft {
+		max-width: calc(50% - 5rem);
 		opacity: 0;
 		transform: translateY(-50px);
 		padding-left: 2em;
@@ -1932,7 +1937,15 @@ input, select, textarea {
 	  }
 	  .fadeInLeft.visible {
 		opacity: 100;
-		transform: translateY(0);
+		transform: translateY(0px);
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
 	  }
 
 	  .fadeInRight.visible {
@@ -2092,7 +2105,33 @@ input, select, textarea {
 		color: #282828 !important;
 	}
 
+	.buttonApplySub{
+		justify-content: center;
+		justify-items: center;
+		max-width: calc(100% - 6rem);
+		transform: translate(50%,50%);
+	}
 
+	.buttonApply {
+		background-color:hsl(224, 56%, 58%,.8);
+		border-radius: 12px;
+		display: inline-block;
+		color: #ffffff !important;
+		text-align: center;
+		box-shadow: inset 0 0 0 1px #364baa;
+		font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+		font-size: 1.5rem;
+	}
+
+	.buttonApply:hover {
+		background-color: hsla(224, 65%, 41%, 0.4);
+		box-shadow: inset 0 0 0 1px hsla(224, 65%, 41%, 0.4);
+	}
+
+	.buttonApply:hover:active {
+		background-color: hsla(224, 65%, 41%, 0.8);
+		box-shadow: inset 0 0 0 1px #364baa;
+	}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -3259,213 +3298,6 @@ input, select, textarea {
 		padding: 2rem 0 3rem 0 ;
 	}
 
-		.wrapper.style1 {
-			background: #f3f3f3;
-		}
-
-		.wrapper.style2 {
-			background-color: #353535;
-			color: rgba(255, 255, 255, 0.5);
-			background: #2f2f2f;
-		}
-
-			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
-				color: #ffffff;
-			}
-
-			.wrapper.style2 strong, .wrapper.style2 b {
-				color: #ffffff;
-			}
-
-			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-				color: #ffffff;
-			}
-
-			.wrapper.style2 blockquote {
-				border-left-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 code {
-				background: rgba(255, 255, 255, 0.075);
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 hr {
-				border-bottom-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 .box {
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 input[type="submit"],
-			.wrapper.style2 input[type="reset"],
-			.wrapper.style2 input[type="button"],
-			.wrapper.style2 button,
-			.wrapper.style2 .button {
-				background-color: transparent;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				color: #ffffff !important;
-			}
-
-				.wrapper.style2 input[type="submit"]:hover,
-				.wrapper.style2 input[type="reset"]:hover,
-				.wrapper.style2 input[type="button"]:hover,
-				.wrapper.style2 button:hover,
-				.wrapper.style2 .button:hover {
-					background-color: rgba(255, 255, 255, 0.075);
-					box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-				}
-
-					.wrapper.style2 input[type="submit"]:hover:active,
-					.wrapper.style2 input[type="reset"]:hover:active,
-					.wrapper.style2 input[type="button"]:hover:active,
-					.wrapper.style2 button:hover:active,
-					.wrapper.style2 .button:hover:active {
-						background-color: rgba(255, 255, 255, 0.05);
-						box-shadow: inset 0 0 0 1px #ffffff;
-					}
-
-				.wrapper.style2 input[type="submit"].primary,
-				.wrapper.style2 input[type="reset"].primary,
-				.wrapper.style2 input[type="button"].primary,
-				.wrapper.style2 button.primary,
-				.wrapper.style2 .button.primary {
-					background-color: #4468ca;
-					box-shadow: none;
-					color: #ffffff !important;
-				}
-
-					.wrapper.style2 input[type="submit"].primary:hover,
-					.wrapper.style2 input[type="reset"].primary:hover,
-					.wrapper.style2 input[type="button"].primary:hover,
-					.wrapper.style2 button.primary:hover,
-					.wrapper.style2 .button.primary:hover {
-						background-color: #5878d0;
-						box-shadow: none;
-					}
-
-						.wrapper.style2 input[type="submit"].primary:hover:active,
-						.wrapper.style2 input[type="reset"].primary:hover:active,
-						.wrapper.style2 input[type="button"].primary:hover:active,
-						.wrapper.style2 button.primary:hover:active,
-						.wrapper.style2 .button.primary:hover:active {
-							background-color: #365bbf;
-						}
-
-			.wrapper.style2 label {
-				color: #ffffff;
-			}
-
-			.wrapper.style2 input[type="text"],
-			.wrapper.style2 input[type="password"],
-			.wrapper.style2 input[type="email"],
-			.wrapper.style2 input[type="tel"],
-			.wrapper.style2 input[type="search"],
-			.wrapper.style2 input[type="url"],
-			.wrapper.style2 select,
-			.wrapper.style2 textarea {
-				background-color: transparent;
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
-				.wrapper.style2 input[type="text"]:focus,
-				.wrapper.style2 input[type="password"]:focus,
-				.wrapper.style2 input[type="email"]:focus,
-				.wrapper.style2 input[type="tel"]:focus,
-				.wrapper.style2 input[type="search"]:focus,
-				.wrapper.style2 input[type="url"]:focus,
-				.wrapper.style2 select:focus,
-				.wrapper.style2 textarea:focus {
-					border-color: #4468ca;
-					box-shadow: 0 0 0 1px #4468ca;
-				}
-
-			.wrapper.style2 select {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.15)' /%3E%3C/svg%3E");
-			}
-
-				.wrapper.style2 select option {
-					color: rgba(255, 255, 255, 0.5);
-					background-color: #353535;
-				}
-
-			.wrapper.style2 input[type="checkbox"] + label,
-			.wrapper.style2 input[type="radio"] + label {
-				color: rgba(255, 255, 255, 0.5);
-			}
-
-				.wrapper.style2 input[type="checkbox"] + label:before,
-				.wrapper.style2 input[type="radio"] + label:before {
-					background-color: transparent;
-					border-color: rgba(255, 255, 255, 0.15);
-				}
-
-			.wrapper.style2 input[type="checkbox"]:checked + label:before,
-			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #4468ca;
-				border-color: #4468ca;
-				color: #ffffff;
-			}
-
-			.wrapper.style2 input[type="checkbox"]:focus + label:before,
-			.wrapper.style2 input[type="radio"]:focus + label:before {
-				border-color: #4468ca;
-				box-shadow: 0 0 0 1px #4468ca;
-			}
-
-			.wrapper.style2 ::-webkit-input-placeholder {
-				color: rgba(255, 255, 255, 0.25) !important;
-			}
-
-			.wrapper.style2 :-moz-placeholder {
-				color: rgba(255, 255, 255, 0.25) !important;
-			}
-
-			.wrapper.style2 ::-moz-placeholder {
-				color: rgba(255, 255, 255, 0.25) !important;
-			}
-
-			.wrapper.style2 :-ms-input-placeholder {
-				color: rgba(255, 255, 255, 0.25) !important;
-			}
-
-			.wrapper.style2 header.heading {
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 header p {
-				color: #4468ca;
-			}
-
-			.wrapper.style2 ul.alt li {
-				border-top-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 table tbody tr {
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
-				.wrapper.style2 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.075);
-				}
-
-			.wrapper.style2 table th {
-				color: #ffffff;
-			}
-
-			.wrapper.style2 table thead {
-				border-bottom-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 table tfoot {
-				border-top-color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 table.alt tbody tr td {
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
@@ -3486,9 +3318,25 @@ input, select, textarea {
 
 	.inner {
 		margin: 0 auto;
-		max-width: calc(100% - 10rem);
+		max-width: calc(100% - 5rem);
 		width: 80rem;
 	}
+
+	.one {
+		background-color: rgba(144, 144, 144, 0.25);
+	}
+
+	.four{
+		margin: auto;
+		max-width: calc(100% - 5rem);
+	}
+	
+	 .six{
+		background-color: white;
+		padding: 3%;
+
+	}
+
 
 	.inner > .content {
 		margin: 0 auto;
@@ -3542,10 +3390,6 @@ input, select, textarea {
 
 /* Header */
 
-	body {
-		padding-top: 3.25rem;
-	}
-
 	#header {
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3560,7 +3404,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: transparent;
-		color: #ffffff;
+		color: transparent;
 		cursor: default;
 		height: 3.25rem;
 		left: 0;
@@ -3913,34 +3757,48 @@ input, select, textarea {
 
 /* SVG*/
 
-/* Banner */
-
-#banner {
-	font: "Audrey";
-	color: rgba(255, 255, 255, 0.5);
-	display: flex;
-	-moz-align-items: center;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	-moz-justify-content: center;
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
-	background-size: cover;
-	cursor: default;
-	min-height: 60rem;
+#four {
+	background-image: url('C:/Users/ssesa/Documents/GitHub/t4e_events/images/statue.png');
+	background-size:cover;
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.6);
+	background-blend-mode: overlay;	
+	min-height: 40vh;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	text-align: left bottom;
-
+	z-index: 100;
 }
+
+
+#six {
+	display: flex;
+	background-image: url('C:/Users/ssesa/Documents/GitHub/t4e_events/images/ghana.png');
+	background-size:cover;
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.6);
+	background-blend-mode: overlay;	
+	min-height: 50vh;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	z-index: 100;
+}
+
+
+
+/* Banner */
+
+
 #bannerMini {
-	color: rgba(255, 255, 255, 1);
 	display: flex;
 	background-image: url('C:/Users/ssesa/Documents/GitHub/t4e_events/images/cloths.png');
 	background-size:cover;
+	background-position: center top;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -3952,12 +3810,14 @@ input, select, textarea {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0.6);
-	background-blend-mode: overlay;	min-height: 60vh;
+	background-blend-mode: overlay;	
+	min-height: 60vh;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	text-align: center;
 	z-index: 100;
+	padding-top: 0%;
 
 }
 
@@ -3966,6 +3826,8 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
+			padding-top: 0%;
+
 			width: 100%;
 			z-index: 1;
 		}
@@ -3982,7 +3844,7 @@ input, select, textarea {
 			
 			#bannerMini > .inner h2 {
 				text-shadow: 2px 2px 4px #000000;
-				font-size: 1.5rem;
+				font-size: 2.5rem;
 				z-index: 100;
 				color: #4e4e4e;
 				opacity: 1;
@@ -4046,25 +3908,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		#banner .svg:before {
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background: #202020;
-			content: '';
-			display: block;
-			left: 0;
-			opacity: 0.25;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			height: auto;
-		}
+
 
 		#bannerMini .svgMini:before {
 			-moz-transition: opacity 1s ease-in-out;
@@ -4086,25 +3930,6 @@ input, select, textarea {
 			height: auto;
 		}
 
-		body.is-preload #banner > .inner {
-			-moz-transform: translateY(0.75em);
-			-webkit-transform: translateY(0.75em);
-			-ms-transform: translateY(0.75em);
-			transform: translateY(0.75em);
-			opacity: 1;
-			z-index: 1;
-
-		}
-
-
-		body.is-preload #banner >  .svg > .inner {
-			-moz-transform: translateY(0.75em);
-			-webkit-transform: translateY(0.75em);
-			-ms-transform: translateY(0.75em);
-			transform: translateY(0.75em);
-			opacity: 0;
-
-		}
 
 		body.is-preload #bannerMini >  .svgMini > .inner {
 			-moz-transform: translateY(0.75em);
