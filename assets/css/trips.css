@@ -3399,6 +3399,8 @@ input, select, textarea {
 
 			.wrapper {
 				padding: 3rem 0 1rem 0 ;
+				background-size: auto 100%;
+
 			}
 
 		}
@@ -3899,9 +3901,16 @@ input, select, textarea {
 	width: 100%;
 	z-index: 100;
 }
+@media screen and (max-width: 736px) {
+	#four {
+		background-size: auto 100%;
+	}
 
+	#six {
+		background-size: auto 100%;
+	}
 
-
+}
 /* Banner */
 
 
@@ -4073,9 +4082,8 @@ input, select, textarea {
 
 			}
 			#bannerMini {
-				background-attachment: scroll;
-				height: 30vh;
-				min-height: 35rem;
+				background-size: auto 100%;
+				
 			}
 
 			#banner > .svg {
