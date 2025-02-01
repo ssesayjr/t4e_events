@@ -2180,11 +2180,12 @@ input, select, textarea {
 	}
 
 	.buttonApplySub{
+		display: flex;
 		justify-content: center;
 		justify-items: center;
-		max-width: calc(100% - 6rem);
-		transform: translate(50%,50%);
-	}
+		max-width: 100%;
+/* 		transform: translate(50%,50%);
+ */	}
 
 	.buttonApply {
 		background-color:hsl(224, 56%, 58%,.8);
@@ -3868,7 +3869,7 @@ input, select, textarea {
 /* SVG*/
 
 #four {
-	background-image: url("//images/statue.png");
+	background-image: url("./images/statue.png");
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -3885,7 +3886,7 @@ input, select, textarea {
 
 #six {
 	display: flex;
-	background-image: url("//images/ghana.png");
+	background-image: url("./images/ghana.png");
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -3906,7 +3907,7 @@ input, select, textarea {
 
 #bannerMini {
 	display: flex;
-	background-image: url('//images/cloths.png');
+	background-image: url("./images/cloths.png");
 	background-size:cover;
 	background-position: center top;
 	-moz-align-items: center;
