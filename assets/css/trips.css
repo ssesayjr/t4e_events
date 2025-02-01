@@ -3868,7 +3868,7 @@ input, select, textarea {
 /* SVG*/
 
 #four {
-	background-image: url('//images/statue.png');
+	background-image: url("//images/statue.png");
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -3885,7 +3885,7 @@ input, select, textarea {
 
 #six {
 	display: flex;
-	background-image: url('//images/ghana.png');
+	background-image: url("//images/ghana.png");
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -3906,7 +3906,7 @@ input, select, textarea {
 
 #bannerMini {
 	display: flex;
-	background-image: url('./images/cloths.png');
+	background-image: url('//images/cloths.png');
 	background-size:cover;
 	background-position: center top;
 	-moz-align-items: center;
