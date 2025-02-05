@@ -4,19 +4,19 @@
 @font-face {
     font-family: "Audrey";
 	font-weight: normal;
-    src: url("../audrey/Audrey-Normal.otf") format("opentype");
+    src: url("../webfonts/Audrey-Normal.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Mosk";
 	font-weight: normal;
-    src: url("../mosk/Mosk-Normal-400.ttf") format("ttf");
+    src: url("../webfonts/Mosk-Normal-400.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Mosk";
 	font-weight: bold;
-    src: url("../mosk/Mosk-Semi-Bold-600.ttf") format("ttf");
+    src: url("../webfonts/Mosk-Semi-Bold-600.ttf") format("ttf");
 }
 /*
 	Venue by Pixelarity
@@ -3871,7 +3871,7 @@ input, select, textarea {
 /* SVG*/
 
 #four {
-	background-image: url('https://ssesayjr.github.io/t4e_events/images/statue.png');
+	background-image: url("../../images/statue.png");
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -3888,7 +3888,7 @@ input, select, textarea {
 
 #six {
 	display: flex;
-	background-image: url('https://ssesayjr.github.io/t4e_events/images/ghana.png');
+	background-image: url("../../images/ghana.png");
 	background-size:cover;
 	background-position: center top;
 	background-attachment: fixed;
@@ -3916,7 +3916,7 @@ input, select, textarea {
 
 #bannerMini {
 	display: flex;
-	background-image: url('https://ssesayjr.github.io/t4e_events/images/cloths.png');
+	background-image: url("../../images/cloths.png");
 	background-size:cover;
 	background-position: center top;
 	-moz-align-items: center;
